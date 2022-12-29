@@ -25,7 +25,7 @@ async function shopifyFetch(client, path, queryList = []) {
     while (nextPageQuery) {
         console.log('request sent');
         objects += 250;
-        console.log('fetched: '+ objects +", " + objects/65000*100 + "%");
+        console.log('fetched: '+ objects +", " + objects/48000*100 + "%");
         const response = await client.get({
             path: path,
             query: nextPageQuery,
